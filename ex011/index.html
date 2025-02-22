@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5 </title>
+</head>
+<body>
+    <h1>Imagem dinámica</h1>
+    <p>Tente abrir  esse site em vários dispositivos diferentes ou simplesmente aumentye e diminua o tamanho do seu navegador</p>
+<picture>
+    <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+    <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexível">
+</picture>
+
+    <h1>Reproduzindo Audio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+
+    <!--<audio src="midia/WhirlwindLove-UnicornHeads.mp3" controls autoplay></audio>-->
+    <!-- temos vários formatos de midia MP3 - wav e OGG-->
+     <!--Vamos ver outra forma de fazer o autoplay, pois determinados navegadores não funciona o que está acimo no código-->
+
+     <audio preload="metadata" autoplay controls loop> <!-- O melhor é usar sem LOOP ( pois a musica vai tocar continuamente- faz loop)-->
+        <source src="midia/Waterfall-AakashGandhi.mp3" type="audio/mpeg">
+        <source src="midia/Waterfall-AakashGandhi.ogg" type="audio/ogg">
+        <source src="midia/Waterfall-AakashGandhi.wav" type="audio/wav"> <!-- são muito pesados , NÃO usar este formato-->
+        <p>Infelizmente seu navegador não consegue reproduzir audio</p>
+        <a href="midia/Waterfall-AakashGandhi.mp3"> clique aqui para baixar o arquivo MP3</a>
+    </audio>
+    
+    
+
+</body>
+</html>
