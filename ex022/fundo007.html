@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            position: relative;
+            height: 96vh;
+            padding:10px;
+            background-color: purple;
+
+        }
+        #conteudo{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellowgreen;
+
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
+
+        }
+
+/* para centar duas cais e colocar a do meio no centro, ie, centralizar verticalmente, devemos fazer na 1ª cx position: relative e na 2ª cx position: absolute.   Devemos ainda colocar a 2ª cx com left e top a 50%.  E  por fim utilizar o parametro TRANSFORM: TRANSLATE ( -50%, -50%) */
+
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+
+        </article>
+
+    </section>
+
+
+    
+</body>
+</html>
