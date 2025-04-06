@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe{
+            width:95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+#image{
+    align-items: center;
+    margin: auto;
+    display: block;
+}
+
+    </style>
+</head>
+<body>
+
+    <h1>Faça uma escolha.</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus beatae animi provident qui quae eligendi magni dolores dignissimos. Velit dolore est voluptatum obcaecati, minima praesentium minus maiores dicta tempore fuga?</p>
+
+    <ul>
+        <li><a href="paginas-extras/pag001.html" target="frame"> Primeira página</a></li>
+        <li><a href="paginas-extras/pag002.html"target="frame"> Segunda página</a></li>
+        <li><a href="paginas-extras/pag003.html" target="frame"> Terceira página</a></li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ipsa earum alias et inventore aut sapiente necessitatibus dolor suscipit assumenda, vitae magnam repudiandae quas accusantium soluta aspernatur nisi doloremque! Iure!</p>
+
+    <iframe  name="frame" id="image" srcdoc="<h1>Escolha a opção pretendida</h1><img  src='paginas-extras/imagens/cachoeira-de-seljalandsfoss-na-islandia.webp'>">
+        <p>Infelizmente seu navegador não é compatível com isso!</p>
+
+    </iframe>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas ducimus ad enim! Rerum, facere dignissimos labore porro, excepturi quisquam fugit distinctio blanditiis exercitationem, explicabo aliquid. Enim eligendi voluptate porro voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, dolorem optio quibusdam ducimus, deleniti quia quaerat aspernatur ipsa facilis, enim architecto quod et non! Velit quo deserunt blanditiis nesciunt error!</p>
+    
+</body>
+</html>
